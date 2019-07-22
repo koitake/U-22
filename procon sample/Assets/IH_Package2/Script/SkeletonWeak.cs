@@ -41,6 +41,7 @@ public class SkeletonWeak : MonoBehaviour
             evolution.Set_Wg(20);
             skeleton = parent.gameObject.GetComponent<Skeleton>();
             skeleton.Die();
+            Destoy(this);
         }
         if (col.gameObject.tag == "Sword" && Sinka_flg1 == true)
         {
@@ -50,11 +51,13 @@ public class SkeletonWeak : MonoBehaviour
             evolution1.Set_Wg1(20);
             skeleton = parent.gameObject.GetComponent<Skeleton>();
             skeleton.Die();
+            Destoy(this);
         }
         if (col.gameObject.tag == "Sword" && Sinka_flg2 == true)
         {
             skeleton = parent.gameObject.GetComponent<Skeleton>();
             skeleton.Die();
+            Destoy(this);
         }
     }
 }

@@ -39,6 +39,7 @@ public class DesKnight_WeakPoint : MonoBehaviour
             evolution.Set_Wg(20);
             deathKnight = parent.gameObject.GetComponent<DeathKnight>();
             deathKnight.Die();
+            Destoy(this);
         }
         if (col.gameObject.tag == "Sword" && Sinka_flg1 == true)
         {
@@ -48,11 +49,13 @@ public class DesKnight_WeakPoint : MonoBehaviour
             evolution1.Set_Wg1(20);
             deathKnight = parent.gameObject.GetComponent<DeathKnight>();
             deathKnight.Die();
+            Destoy(this);
         }
         if (col.gameObject.tag == "Sword" && Sinka_flg2 == true)
         {
             deathKnight = parent.gameObject.GetComponent<DeathKnight>();
             deathKnight.Die();
+            Destoy(this);
         }
     }
 
